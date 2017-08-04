@@ -13,11 +13,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Show a message
-        print("My first App")
+        
         
     }
 
+    @IBOutlet weak var dogAgeField: UITextField!
+    @IBOutlet weak var resultAge: UILabel!
+    
+    @IBAction func findAge(_ sender: Any) {
+        
+        var dogAge = Int(dogAgeField.text!)!
+        dogAge = dogAge * 7
+        
+        resultAge.text = "The dog's age is: " + String(dogAge)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
