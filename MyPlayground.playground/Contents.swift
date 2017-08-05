@@ -331,5 +331,3 @@ import UIKit
 //parrot.weight
 //parrot.speak()
 
-
-print(1)
